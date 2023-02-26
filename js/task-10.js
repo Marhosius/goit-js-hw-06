@@ -29,7 +29,7 @@ function createBoxes(amount) {
     boxesArray.push(`<div style="width: ${step}px;height: ${step}px;background-color: ${getRandomHexColor()};" ></div>`);
     step += 10;
   }
-  boxesDiv.innerHTML = `${(boxesArray).join("")}`;
+  boxesDiv.insertAdjacentHTML('afterbegin', (boxesArray).join(""));
 };
 
 
